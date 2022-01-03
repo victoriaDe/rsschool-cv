@@ -58,8 +58,8 @@ ul {
 
 .avatar {
   position: fixed;
-  bottom: 5%;
-  left: 10%;
+  top: 5%;
+  left: 5%;
   width: 80px;
   height: 80px;
   z-index: 20; }
@@ -181,6 +181,9 @@ section {
   font-size: 1.5rem;
   color: #010134;
   font-weight: 600; }
+.footer-nav-link:hover{
+    color: #4c2d86;
+}
 
 .footer-nav-link.rs {
   background: url("assets/img/ad178c0df28bc133be34.svg") no-repeat;
