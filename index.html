@@ -3,9 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <title>CV page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Here is my cv will be</h1>
+<div class="wrapper">
+    <header class="header">
+        <img class="avatar" src="src/assets/img/racc.png" alt="avatar">
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-links"><a href="#about" class="header-nav-link">About</a></li>
+                <li class="header-nav-links"><a href="#contacts" class="header-nav-link">Contacts</a></li>
+                <li class="header-nav-links"><a href="#skills" class="header-nav-link">Skills</a></li>
+                <li class="header-nav-links"><a href="#code" class="header-nav-link">Code</a></li>
+                <li class="header-nav-links"><a href="#gallery" class="header-nav-link">Gallery</a></li>
+                <li class="header-nav-links"><a href="#education" class="header-nav-link">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <h1>Victoria Derugo</h1>
+            <h3>FrontEnd Developer</h3>
+            <hr>
+            <div class="about-content">
+                <p>I’m looking for a Junior FrontEnd developer position in a company which can provide me wit
+                    opportunities
+                    for
+                    tech and soft skills development.</p>
+                <p>I would love to become a part of a team, study new technology and their subtility, work with
+                    high-skilled
+                    professionals, learn from them and become a good specialist. And I do have strong desire to work.
+                </p>
+                <p>I’m easy-going non-confrontational responsible person who is not afraid of taking charge and always
+                    ready
+                    to
+                    study hard. In my opinion, constant development necessity is one of the main advantage of the
+                    FrondEnd
+                    development.</p>
+                <p>Have been studying in Vietnam for 6 months (international scholarship).</p>
+                <p>Currently, live in Lviv, Ukraine.</p>
+            </div>
+        </section>
+        <section id="contacts">
+            <h2>Contacts: </h2>
+            <ul class="contacts-list">
+                <li class="contact-links"><a href="tel:+380668784973" class="contact-link">+380 66 878 49 73</a></li>
+                <li class="contact-links"><a href="mailto:victoria.derugo@gmail.com" class="contact-link">victoria.derugo@gmail.com</a>
+                </li>
+                <li class="contact-links"><a href="#" class="contact-link">@tkramor</a></li>
+                <li class="contact-links"><a href="https://github.com/victoriaDe" class="contact-link">GitHub</a></li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Professional Skills:</h2>
+            <ul class="skills-list">
+                <li class="skills-link">HTML5</li>
+                <li class="skills-link">CSS3</li>
+                <li class="skills-link">SCSS</li>
+                <li class="skills-link">JavaScript</li>
+                <li class="skills-link">Prepros</li>
+                <li class="skills-link">Webpack(basic)</li>
+                <li class="skills-link">TypeScript(basic)</li>
+                <li class="skills-link">Git, GitHub</li>
+                <li class="skills-link">IntelliJ IDEA</li>
+            </ul>
+        </section>
+        <section id="code">
+            <h2>Code example</h2>
+            <h3>Codewars: </h3>
+            <pre class="prettyprint code-content"> function anagrams(word, words) {
+            //anagrams(‘racer’, [‘crazer’, ‘carer’, ‘racar’, ‘caers’, ‘racer’]) => [‘carer’, ‘racer’]
+             word = word.split('').sort().join('');
+             return words.filter(function(v) {return word == v.split('').sort().join('');});
+        }"
+</pre>
+        </section>
+        <section id="gallery">
+            <h2>Gallery: </h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <a class="cell" href="https://github.com/victoriaDe/CellGame"></a>
+                </div>
+                <div class="gallery-item">
+                    <a class="shop" href="https://victoriade.github.io/premium-store/frontend/"></a>
+                </div>
+                <div class="gallery-item">
+                    <a href="https://github.com/victoriaDe/landing-Shopno" class="shopno"></a>
+                </div>
+            </div>
+            <p>Should you want to see other projects, please, check out my <a href="https://github.com/victoriaDe"
+                                                                              target="_blank">GitHub</a> account.
+            </p>
+        </section>
+        <section id="education">
+            <h2>Education:</h2>
+            <p>I’m graduated from the Minsk State Linguistic University, Interpreter’s Department with knowledge of two
+                foreign
+                languages the English (C1) and Dutch (B1). 
+                I have also completed Web Development course in the ITAcademy, Minsk
+                and
+                remote
+                WG Forge course lead by Wargaming.net company. I’m looking forward to learn more.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li class="footer-nav-links"><a href="https://github.com/victoriaDe" class="footer-nav-link">GitHub</a>
+                </li>
+                <li class="footer-nav-links">2022</li>
+                <li class="footer-nav-links"><a href="https://rs.school/js/" class="footer-nav-link rs"></a></li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 </body>
 </html>
